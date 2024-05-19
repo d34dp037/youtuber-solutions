@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Thumbnail Generator</h1>
+        <div class="canvas-container">
+            <img id="uploadedImage" src="" alt="Uploaded Image">
+        </div>
+        <form id="uploadForm">
+            <input type="file" id="uploadImage" name="image" accept="image/*" required>
+            <input type="text" id="topText" name="topText" placeholder="Top Text" required>
+            <input type="text" id="bottomText" name="bottomText" placeholder="Bottom Text" required>
+            <button type="submit">Generate Thumbnail</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+</body>
+</html>
